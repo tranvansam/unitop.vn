@@ -1,0 +1,48 @@
+body{
+    background-image: url("../public/images/background.jpg");
+    font-size: 14px;
+    font-family: arial;
+    line-height: 23px;
+    /* background: #f12a43; */
+}
+#wp-form-login{
+    width: 330px;
+    background: #ffc390;
+    border-radius: 3px;
+    padding: 30px 20px 20px 20px;
+    margin: 150px auto;
+    text-align: center;
+}
+.page-title{
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+#form-login input:not(input[name = 'gender']){
+display: block;
+
+}
+#form-login input#check_box{
+    display: inline-block;
+}
+#form-login input#username, #form-login input#password, #form-login input#fullname,#form-login input#email{
+    width: 100%;
+    padding: 6px 20px;
+    margin-bottom: 15px;
+    border: none;
+    background: #f7f7f7;
+}
+#form-login input#btn-login{
+    width: 100%;
+    background: #f12a43;
+    border: none;
+    color: #fff;
+    padding: 10px 0;
+    margin: 15px 0 10px;
+    filter: blur(0.px);
+}
+p.error{
+    font-size: 13px;
+    color: red;
+    text-align: left;
+}

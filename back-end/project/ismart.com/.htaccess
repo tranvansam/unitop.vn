@@ -1,0 +1,11 @@
+RewriteEngine On
+RewriteRule "^([a-zA-Z0-9_-]+).html$" "index.php?mod=$1"
+# chi tiet bai viet
+RewriteRule "^bai-viet/([a-zA-Z0-9_-]+)-([0-9]+).html$" "index.php?mod=blog&action=detail&id=$2"
+#danh mục sản phẩm
+RewriteRule "^san-pham/([a-zA-Z0-9_-]+)-([0-9]+).html$" "index.php?mod=products&cat_id=$2"
+#subcat
+#Danh sach san pham thuoc subcat
+RewriteRule "^san-pham/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)-([0-9]+).html$" "index.php?mod=products&controller=sub_cat&cat_id=$3"
+
+
